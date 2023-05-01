@@ -39,3 +39,24 @@ FINX_REGISTERED_EMAIL=my_finx_registered_email
 FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
 
 ALLOWLISTEDPLUGINS=[AutoGPTFinXPlugin]
+
+## Some Available Commands
+
+More exhaustive documentation of commands is available [here](https://app.finx.io/docs)
+
+1. Run Auto-GPT with the following inputs in manual mode (--manual):
+
+- AI Name: FinXGPT
+- Role: analyze a treasury bond
+- Goals:
+  - Goal 1: find a treasury bond
+  - Goal 2: find current market price for the found bond
+  - Goal 3: run analytics for the found bond as of today
+  - Goal 4: write the output as a report to a file 'treasury_bond.txt'
+  
+If you are configured correctly, you should get a response like this:
+
+```
+response
+```
+
