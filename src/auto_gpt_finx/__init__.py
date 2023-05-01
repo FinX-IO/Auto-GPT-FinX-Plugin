@@ -45,7 +45,7 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
                 "as_of_date": "<as_of_date>",
                 "user_uuid": "<user_uuid>",
             },
-            self.analyze_security
+            analyze_investment_security
         )
         return prompt
 
