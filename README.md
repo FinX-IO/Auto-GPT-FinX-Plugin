@@ -15,3 +15,11 @@ The FinX Plugin for Auto-GPT streamlines the capital markets research process by
   - Perform cash flow testing on individual securities or entire portfolios.
 - Trinomial Trees for Bonds, Derivatives, and tough-to-value securities with optionality.
   - Will you create the next generation of Risk, Prepayment and Defualt models?"
+
+## Installation
+
+1. Clone this repository and navigate to the Auto-GPT-FinX-Plugin folder in a terminal:
+
+```
+git clone https://github.com/FinX-IO/Auto-GPT-FinX-Plugin.git
+```
