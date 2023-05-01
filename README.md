@@ -70,15 +70,16 @@ Get started with FinX-GPT Plugin in 5 minutes.
 
    Transfer the FinX-GPT-Plugin zip file into the plugins subfolder in the Auto-GPT repository.
 
-6. Locate the .env.template file
-   Find the .env.template file in the /Auto-GPT folder.
+6. Locate the `.env.template` file
+   Find the `.env.template` file in the /Auto-GPT folder.
 
 7. Duplicate and rename the file
    
-   Duplicate the .env.template file and rename to .env in the /Auto-GPT folder.
+   Duplicate the `.env.template` file and rename to `.env` in the /Auto-GPT folder.
 
-8. Open the .env file
-   Open the .env.template file in a text editor. Note: Your operating system may hide files starting with a dot.
+8. Open the `.env` file
+   
+   Open the `.env.template` file in a text editor. Note: Your operating system may hide files starting with a dot.
 
 9. Add Auto-GPT-FinX-Plugin configuration settings
    
@@ -96,7 +97,8 @@ Get a FinX API Key at app.finx.io
 Set FINX_API_KEY to your FinX API Key
 
 10. Allowlist Plugin
-    In the .env search for ALLOWEDLISTED_PLUGINS and add the FinX-Plugin. Note: Sets of listed plugins that are allowed (Example: Plugin1,Plugin2)
+    
+    In the `.env` file search for ALLOWEDLISTED_PLUGINS and add the FinX-Plugin. Note: Sets of listed plugins that are allowed (Example: Plugin1,Plugin2)
     ```
     ###################################################################################
     FinX-Plugin
