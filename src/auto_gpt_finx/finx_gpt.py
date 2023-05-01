@@ -3,7 +3,7 @@ from typing import Any, Dict, Optional
 import os
 from finx.client import FinXClient
 
-def analyze_investment_security(self, security_id: str, as_of_date: str) -> Optional[Dict[str, Any]]:
+def analyze_investment_security(security_id: str, as_of_date: str) -> Optional[Dict[str, Any]]:
     """Analyze security using FinX API"""
     finx_api_key = os.getenv("FINX_API_KEY")
     if not finx_api_key:
