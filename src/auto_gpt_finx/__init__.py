@@ -24,7 +24,7 @@ class Message(TypedDict):
     role: str
     content: str
 
-class AutoGPTFinX(AutoGPTPluginTemplate):
+class FinX(AutoGPTPluginTemplate):
 
     def __init__(self):
         super().__init__()
