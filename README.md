@@ -40,6 +40,57 @@ FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
 
 ALLOWLISTEDPLUGINS=AutoGPTFinXPlugin
 ```
+## Installation
+
+Get started with FinX-GPT Plugin in 5 minutes.
+
+1. Clone the Auto-GPT-FinX-Plugin repository
+
+   Clone this repository and navigate to the Auto-GPT-FinX-Plugin folder in your terminal:
+   ```
+   git clone https://github.com/FinX-IO/Auto-GPT-FinX-Plugin.git
+   ```
+   
+2. *Install required dependencies*
+   Execute the following command to install FinX-IO Python SDK and dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+   
+3. *Package the plugin as a zip file*
+   If you cloned the repository, compress the plugin into a zip file or download the repository as a zip file.
+   
+4. *Install Auto-GPT*
+   If not already installed, clone the Auto-GPT repository, follow the installation instructions and navigate to the Auot-GPT folder.
+
+5. *Copy the zip file into the Auto-GPT Plugin folder*
+   Transfer the FinX-GPT-Plugin zip file into the plugins subfolder in the Auto-GPT repository.
+
+6. *Locate the .env.template file*
+   Find the .env.template file in the /Auto-GPT folder.
+
+7. *Duplicate and rename the file*
+   Duplicate the .env.template file and rename to .env in the /Auto-GPT folder.
+
+8. *Open the .env file*
+   Open the .env.template file in a text editor. Note: Your operating system may hide files starting with a dot.
+
+9. *Add Auto-GPT-FinX-Plugin configuration settings*
+   Append the following configuration setting to the end of the file:
+   ###################################################################################
+   FinX-Plugin
+   ################################################################################
+   FINX_API_KEY=
+   
+Get a FinX API Key at app.finx.io
+Set FINX_API_KEY to your FinX API Key
+
+10. *Allowlist Plugin*
+    In the .env search for ALLOWEDLISTED_PLUGINS and add the FinX-Plugin. Note: Sets of listed plugins that are allowed (Example: Plugin1,Plugin2)
+    ###################################################################################
+    FinX-Plugin
+    ################################################################################
+    ALLOWEDLISTED_PLUGINS=Auto-GPT-FinX-Plugin
 
 ## Some Available Commands
 
