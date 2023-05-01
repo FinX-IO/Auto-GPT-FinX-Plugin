@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-import finx_gpt
+from . import finx_gpt
 
 PromptGenerator = TypeVar("PromptGenerator")
 
