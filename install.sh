@@ -13,7 +13,7 @@ echo "FinX Plugin for Auto-GPT will now install dependencies."
 apt-get install -y gcc
 pip install -r finx-requirements.txt
 cd $workspace/plugins
-curl "https://github.com/isaiahbjork/Auto-GPT-MetaTrader-Plugin/archive/refs/heads/master.zip"
+curl "https://github.com/isaiahbjork/Auto-GPT-FinX-Plugin/archive/refs/heads/main.zip"
 echo "FinX Plugin for Auto-GPT dependency installation complete."
 echo "Now you will need to configure your Auto-GPT Environment (default is Auto-GPT/.env)"
 echo "Please enter the following values into your .env file"

@@ -9,4 +9,3 @@ pathlib
 python-dotenv
 requests
 ta
-
