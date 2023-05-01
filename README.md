@@ -39,6 +39,7 @@ FINX_REGISTERED_EMAIL=my_finx_registered_email
 FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
 
 ALLOWLISTEDPLUGINS=[AutoGPTFinXPlugin]
+```
 
 ## Some Available Commands
 
