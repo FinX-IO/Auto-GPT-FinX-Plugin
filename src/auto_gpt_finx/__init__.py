@@ -37,10 +37,10 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
 
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         """Post prompt to FinX API"""
-        prompt = super().post_prompt(prompt)
+        from finx_gpt import analyze_investment_security
         prompt.add_command(
             "Analyze Security",
-            "analyze_security",
+            "analyze_investment_security",
             {
                 "security_id": "<security_id>",
                 "as_of_date": "<as_of_date>",
