@@ -18,8 +18,15 @@ The FinX Plugin for Auto-GPT streamlines the capital markets research process by
 
 ## Installation
 
-1. Clone this repository and navigate to the Auto-GPT-FinX-Plugin folder in a terminal:
+1. Clone this repository:
 
 ```
 git clone https://github.com/FinX-IO/Auto-GPT-FinX-Plugin.git
+```
+
+2. Navigate to the Auto-GPT-FinX-Plugin folder in a terminal and run the install.sh script:
+
+```
+cd ~/Auto-GPT-FinX-Plugin
+bash install.sh
 ```
