@@ -1,4 +1,7 @@
-abstract_singleton
+auto_gpt_plugin_template
+black
+isort
+flake8
 finx-io
 numpy
 pandas

@@ -5,15 +5,11 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 
 # FinX
 from dotenv import load_dotenv
-import requests
 import os
 from pathlib import Path
-import numpy as np
-import ta
-import pandas as pd
-import finx
 
-PromptGenerator = TypeVar("PromptGenerator", bound="FinXPromptGenerator")
+PromptGenerator = TypeVar("PromptGenerator")
+
 finx_api_key = os.getenv("FINX_API_KEY")
 finx_registered_email = os.getenv("FINX_REGISTERED_EMAIL")
 
@@ -23,7 +19,7 @@ with open(str(Path(os.getcwd()) / ".env"), "r") as fp:
 class Message(TypedDict):
     """Message type for FinX API"""
     role: str
-    message: str
+    content: str
 
 class AutoGPTFinX(AutoGPTPluginTemplate):
 
