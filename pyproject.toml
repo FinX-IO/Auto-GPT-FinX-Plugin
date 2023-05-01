@@ -1,12 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
-name = "auto_gpt_finx"
+name = "auto_gpt_finx_plugin"
 version = "0.0.1"
 authors = [
   { name="FinX Capital Markets LLC", email="info@finx.io" },
 ]
 description = "The FinX.io plugin for Auto-GPT."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -21,3 +25,11 @@ dependencies = [
 "Homepage" = "https://github.com/FinX-IO/Auto-GPT-FinX-Plugin"
 "Bug Tracker" = "https://github.com/FinX-IO/Auto-GPT-FinX-Plugin"
 
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+extend-exclude = ""
+
+[tool.isort]
+profile = "black"

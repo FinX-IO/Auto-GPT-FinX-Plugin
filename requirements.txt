@@ -2,6 +2,8 @@ abstract_singleton
 finx-io
 numpy
 pandas
+pathlib
+python-dotenv
 requests
 ta
 
