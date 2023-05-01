@@ -38,7 +38,7 @@ class FinX(AutoGPTPluginTemplate):
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         """Post prompt to FinX API"""
         prompt.add_command(
-            "Calculate Security Analytics",
+            "Calculate Investment Security Analytics",
             "calculate_security_analytics",
             {
                 "security_id": "<security_id>",
@@ -48,7 +48,7 @@ class FinX(AutoGPTPluginTemplate):
             calculate_security_analytics
         )
         prompt.add_command(
-            "Get Security Reference Data",
+            "Get Investment Security Reference Data",
             "get_security_reference_data",
             {
                 "security_id": "<security_id>"
