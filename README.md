@@ -42,7 +42,7 @@ ALLOWLISTEDPLUGINS=AutoGPTFinXPlugin
 ```
 ## Installation
 
-Get started with FinX-GPT Plugin in 5 minutes.
+Get started with FinX-Plugin in 5 minutes.
 
 **1. Clone the Auto-GPT-FinX-Plugin repository**
 
