@@ -42,8 +42,7 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
             "analyze_investment_security",
             {
                 "security_id": "<security_id>",
-                "as_of_date": "<as_of_date>",
-                "user_uuid": "<user_uuid>",
+                "as_of_date": "<as_of_date>"
             },
             analyze_investment_security
         )
