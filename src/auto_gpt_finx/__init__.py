@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-from .finx_gpt import calculate_security_analytics, get_security_reference_data
+from .finx_gpt import *
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -54,6 +54,66 @@ class FinX(AutoGPTPluginTemplate):
                 "security_id": "<security_id>"
             },
             get_security_reference_data
+        )
+        prompt.add_command(
+            "Get Curve Data",
+            "get_curve",
+            {
+                "curve_name": "<curve_name>",
+                "currency": "<currency>",
+                "start_date": "<start_date>",
+                "end_date": "<end_date>",
+                "country_code": "<country_code>",
+                "fixing": "<fixing>",
+                "tenor": "<tenor>"
+            },
+            get_curve
+        )
+        prompt.add_command(
+            "Calculate Greeks",
+            "calculate_greeks",
+            {
+                "s0": "<s0>",
+                "k": "<k>",
+                "r": "<r>",
+                "sigma": "<sigma>",
+                "q": "<q>",
+                "t": "<t>",
+                "price": "<price>",
+                "option_side": "<option_side>",
+                "option_type": "<option_type>"
+            },
+            calculate_greeks
+        )
+        prompt.add_command(
+            "Calculate Security Key Rates",
+            "calculate_security_key_rates",
+            {
+                "security_id": "<security_id>",
+                "as_of_date": "<as_of_date>",
+                "price": "<price>",
+                "lognormal": "<lognormal>",
+                "volatility": "<volatility>",
+                "drift_a": "<drift_a>",
+                "yield_shift": "<yield_shift>",
+                "shock_in_bp": "<shock_in_bp>",
+                "price_as_yield": "<price_as_yield>",
+                "cpr": "<cpr>",
+                "psa": "<psa>"
+            },
+            calculate_security_key_rates
+        )
+        prompt.add_command(
+            "Generate Trinomial Tree",
+            "generate_trinomial_tree",
+            {
+                "curve_data": "<curve_data>",
+                "num_paths": "<num_paths>",
+                "volatility": "<volatility>",
+                "drift_a": "<drift_a>",
+                "lognormal": "<lognormal>"
+            },
+            generate_trinomial_tree
         )
         return prompt
 
