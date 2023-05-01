@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-from .finx_gpt import analyze_investment_security, get_security_reference_data
+from .finx_gpt import calculate_security_analytics, get_security_reference_data
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -38,13 +38,14 @@ class FinX(AutoGPTPluginTemplate):
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         """Post prompt to FinX API"""
         prompt.add_command(
-            "Analyze Security",
-            "analyze_investment_security",
+            "Calculate Security Analytics",
+            "calculate_security_analytics",
             {
                 "security_id": "<security_id>",
-                "as_of_date": "<as_of_date>"
+                "as_of_date": "<as_of_date>",
+                "price": "<price>"
             },
-            analyze_investment_security
+            calculate_security_analytics
         )
         prompt.add_command(
             "Get Security Reference Data",
