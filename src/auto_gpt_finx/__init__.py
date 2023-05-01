@@ -115,6 +115,24 @@ class FinX(AutoGPTPluginTemplate):
             },
             generate_trinomial_tree
         )
+        prompt.add_command(
+            "Generate Investment Security Cash Flows",
+            "generate_investment_security_cash_flows",
+            {
+                "security_id": "<security_id>",
+                "as_of_date": "<as_of_date>",
+                "price": "<price>",
+                "lognormal": "<lognormal>",
+                "volatility": "<volatility>",
+                "drift_a": "<drift_a>",
+                "yield_shift": "<yield_shift>",
+                "shock_in_bp": "<shock_in_bp>",
+                "price_as_yield": "<price_as_yield>",
+                "cpr": "<cpr>",
+                "psa": "<psa>"
+            },
+            generate_investment_security_cash_flows
+        )
         return prompt
 
     def can_handle_post_prompt(self) -> bool:

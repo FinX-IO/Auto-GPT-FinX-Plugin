@@ -52,3 +52,11 @@ def generate_trinomial_tree(curve_data: list, num_paths: int, volatility: float 
     finx_client = FinXClient("socket", ssl=True, api_key=finx_api_key)
     results = finx_client.calibrate_tree(curve_data, num_paths, volatility, drift_a, lognormal)
     return results
+
+def generate_investment_security_cash_flows(security_id: str, as_of_date: str, price: float, lognormal: True, volatility: float, drift_a: float, yield_shift: float, shock_in_bp: float, price_as_yield: float, cpr: float, psa: float) -> Optional[Dict[str, Any]]:
+    finx_api_key = os.getenv("FINX_API_KEY")
+    if not finx_api_key:
+        raise Exception("FINX_API_KEY not set")
+    finx_client = FinXClient("socket", ssl=True, api_key=finx_api_key)
+    results = finx_client.get_security_cash_flows(security_id, as_of_date, price, lognormal, volatility, drift_a, yield_shift, shock_in_bp, price_as_yield, cpr, psa)
+    return results
