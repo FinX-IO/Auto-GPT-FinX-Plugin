@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-import finx_gpt
+from .finx_gpt import analyze_investment_security
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -37,7 +37,6 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
 
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         """Post prompt to FinX API"""
-        from finx_gpt import analyze_investment_security
         prompt.add_command(
             "Analyze Security",
             "analyze_investment_security",
