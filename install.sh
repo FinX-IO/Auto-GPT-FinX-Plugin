@@ -2,7 +2,7 @@
 echo "FinX Plugin For Auto-GPT Installation Script"
 echo "Please follow the installation prompts:"
 echo newline
-echo "Enter the full path of your Auto-GPT workspace (ex: /home/ubuntu/Auto-GPT/auto_gpt_workspace)"
+echo "Enter the full path of your Auto-GPT folder (ex: /home/ubuntu/Auto-GPT)"
 read workspace
 if [[ "$(workspace: -1)" == "/" ]]; then
   workspace="$(workspace:0:-1)"
@@ -11,6 +11,8 @@ cp requirements.txt $workspace/finx-requirements.txt
 cd $workspace
 echo "FinX Plugin for Auto-GPT will now install dependencies."
 pip install -r finx-requirements.txt
+cd $workspace/plugins
+curl "https://github.com/isaiahbjork/Auto-GPT-MetaTrader-Plugin/archive/refs/heads/master.zip"
 echo "FinX Plugin for Auto-GPT dependency installation complete."
 echo "Now you will need to configure your Auto-GPT Environment (default is Auto-GPT/.env)"
 echo "Please enter the following values into your .env file"
