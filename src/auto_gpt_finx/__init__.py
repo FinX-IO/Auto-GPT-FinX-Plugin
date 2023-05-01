@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-from .finx_gpt import analyze_investment_security
+from .finx_gpt import analyze_investment_security, get_security_reference_data
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -45,6 +45,14 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
                 "as_of_date": "<as_of_date>"
             },
             analyze_investment_security
+        )
+        prompt.add_command(
+            "Get Security Reference Data",
+            "get_security_reference_data",
+            {
+                "security_id": "<security_id>"
+            },
+            get_security_reference_data
         )
         return prompt
 
