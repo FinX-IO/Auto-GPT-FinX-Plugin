@@ -181,16 +181,3 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
             str: The resulting response.
         """
         pass
-
-    def analyze_security(self, security_id: str, as_of_date: str) -> Optional[Dict[str, Any]]:
-        """Analyze security using FinX API"""
-        url = f"{self.finx_api_url}/python/analyze_security/{security_id}"
-        params = {
-            "finx_api_key": self.finx_api_key,
-            "as_of_date": as_of_date
-        }
-        response = requests.get(url, params=params)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            return None
