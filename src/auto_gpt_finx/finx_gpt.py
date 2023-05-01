@@ -1,11 +1,7 @@
 #! python
 from typing import Any, Dict, Optional
 import os
-from . import AutoGPTFinX
-import finx
 from finx.client import FinXClient
-
-plugin = AutoGPTFinX()
 
 def analyze_investment_security(self, security_id: str, as_of_date: str) -> Optional[Dict[str, Any]]:
     """Analyze security using FinX API"""

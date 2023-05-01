@@ -3,10 +3,12 @@
 from typing import Any, Dict, List, Optional, Tuple, TypeVar, TypedDict
 from auto_gpt_plugin_template import AutoGPTPluginTemplate
 
+
 # FinX
 from dotenv import load_dotenv
 import os
 from pathlib import Path
+import finx_gpt
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -15,6 +17,7 @@ finx_registered_email = os.getenv("FINX_REGISTERED_EMAIL")
 
 with open(str(Path(os.getcwd()) / ".env"), "r") as fp:
     load_dotenv(stream=fp)
+
 
 class Message(TypedDict):
     """Message type for FinX API"""
@@ -35,14 +38,16 @@ class AutoGPTFinX(AutoGPTPluginTemplate):
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         """Post prompt to FinX API"""
         prompt = super().post_prompt(prompt)
-        prompt.add_comment(
+        prompt.add_command(
             "Analyze Security",
             "analyze_security",
             {
                 "security_id": "<security_id>",
-                "as_of_date": "<as_of_date>"
+                "as_of_date": "<as_of_date>",
+                "user_uuid": "<user_uuid>",
             },
-            self.analyze_security)
+            self.analyze_security
+        )
         return prompt
 
     def can_handle_post_prompt(self) -> bool:
