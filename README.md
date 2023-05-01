@@ -14,7 +14,7 @@ The FinX Plugin for Auto-GPT streamlines the capital markets research process by
 - The industry's most advanced Cash Flow Testing engine, now Autonomously AI-Enabled.
   - Perform cash flow testing on individual securities or entire portfolios.
 - Trinomial Trees for Bonds, Derivatives, and tough-to-value securities with optionality.
-  - Will you create the next generation of Risk, Prepayment and Defualt models?"
+  - Will you create the next generation of Risk, Prepayment and Defualt models?
 
 ## Installation
 
