@@ -30,3 +30,12 @@ git clone https://github.com/FinX-IO/Auto-GPT-FinX-Plugin.git
 cd ~/Auto-GPT-FinX-Plugin
 bash install.sh
 ```
+
+3. Make sure that your Auto-GPT environment configuration is correct and has values populated for:
+
+```
+FINX_API_KEY=my_finx_api_key
+FINX_REGISTERED_EMAIL=my_finx_registered_email
+FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
+
+ALLOWLISTEDPLUGINS=[AutoGPTFinXPlugin]
