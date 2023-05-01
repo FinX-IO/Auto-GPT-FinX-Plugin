@@ -1,1 +1,7 @@
+abstract_singleton
 finx-io
+numpy
+pandas
+requests
+ta
+

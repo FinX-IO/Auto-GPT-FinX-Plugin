@@ -1,0 +1,16 @@
+Security Analytics Commands
+
+get_security_reference_date
+calculate_security_analytics
+calculate_greeks
+generate_security_cash_flows
+
+Portfolio Analytics Commands
+
+get_portfolio_reference_date
+calculate_portfolio_analytics
+calculate_portfolio_var
+generate_portfolio_cash_flows
+generate_portfolio_risk_report
+run_scenario_analysis
+

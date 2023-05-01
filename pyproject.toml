@@ -1,0 +1,23 @@
+[project]
+name = "auto_gpt_finx"
+version = "0.0.1"
+authors = [
+  { name="FinX Capital Markets LLC", email="info@finx.io" },
+]
+description = "The FinX.io plugin for Auto-GPT."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "abstract-singelton",
+    "finx-io"
+]
+
+[project-urls]
+"Homepage" = "https://github.com/FinX-IO/Auto-GPT-FinX-Plugin"
+"Bug Tracker" = "https://github.com/FinX-IO/Auto-GPT-FinX-Plugin"
+
