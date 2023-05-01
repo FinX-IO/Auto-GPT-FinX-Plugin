@@ -1,5 +1,6 @@
 Security Analytics Commands
 
+analyze_security
 get_security_reference_date
 calculate_security_analytics
 calculate_greeks
