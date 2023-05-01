@@ -10,6 +10,7 @@ fi
 cp requirements.txt $workspace/finx-requirements.txt
 cd $workspace
 echo "FinX Plugin for Auto-GPT will now install dependencies."
+apt-get install -y gcc
 pip install -r finx-requirements.txt
 cd $workspace/plugins
 curl "https://github.com/isaiahbjork/Auto-GPT-MetaTrader-Plugin/archive/refs/heads/master.zip"
