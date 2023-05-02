@@ -70,7 +70,7 @@ Get started with FinX-Plugin in 5 minutes.
    FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
    ```
    
-- Get a FinX API Key at [here]https://app.finx.io)
+- Get a FinX API Key at [here](https://app.finx.io)
 
 **10. Allowlist Plugin**
     
