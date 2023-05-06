@@ -84,7 +84,7 @@ Get started with FinX-Plugin in 5 minutes.
     
 ## Some Available Commands
 
-More exhaustive documentation of commands is available [here](https://app.finx.io/docs)
+More exhaustive documentation of commands is available <a href="https://app.finx.io/docs" target="_blank">here</a>
 
 1. Run Auto-GPT with the following inputs in manual mode (--manual):
 
