@@ -79,7 +79,7 @@ Get started with FinX-Plugin in 5 minutes.
     ###################################################################################
     FinX-Plugin
     ################################################################################
-    ALLOWEDLISTED_PLUGINS=Auto-GPT-FinX-Plugin
+    ALLOWEDLISTED_PLUGINS=FinX
     ```
     
 ## Some Available Commands
