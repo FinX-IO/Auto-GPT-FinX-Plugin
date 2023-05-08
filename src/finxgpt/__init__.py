@@ -14,6 +14,10 @@ PromptGenerator = TypeVar("PromptGenerator")
 
 finx_api_key = os.getenv("FINX_API_KEY")
 finx_registered_email = os.getenv("FINX_REGISTERED_EMAIL")
+try:
+    finx_api_url = os.getenv("FINX_API_ENDPOINT")
+except:
+    finx_api_url = 'https://hedgefunds.finx.io/'
 
 with open(str(Path(os.getcwd()) / ".env"), "r") as fp:
     load_dotenv(stream=fp)
@@ -30,7 +34,7 @@ class Finxgpt(AutoGPTPluginTemplate):
         super().__init__()
         self.finx_api_key = finx_api_key
         self.finx_registered_email = finx_registered_email
-        self.finx_api_url = "https://hedgefunds.finx.io"
+        self.finx_api_url = finx_api_url
         self._version = "0.0.1"
         self._name = "AutoGPT FinX Plugin"
         self._description = "FinX Plugin for Auto-GPT"
