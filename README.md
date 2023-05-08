@@ -36,7 +36,7 @@ Get started with FinX-Plugin in 5 minutes.
    
 **3. Install Auto-GPT**
 
-   If not already installed, clone the [Auto-GPT repository](https://github.com/Significant-Gravitas/Auto-GPT), follow the installation instructions and navigate to the `Auot-GPT` folder.
+   If not already installed, clone the [Auto-GPT repository](https://github.com/Significant-Gravitas/Auto-GPT), follow the installation instructions and navigate to the `Auto-GPT` folder.
 
 **3. Package the plugin as a zip file**
    
