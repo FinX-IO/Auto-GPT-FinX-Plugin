@@ -8,7 +8,7 @@ from auto_gpt_plugin_template import AutoGPTPluginTemplate
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-from .finx_gpt import *
+from .finx_utils import *
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -24,7 +24,7 @@ class Message(TypedDict):
     role: str
     content: str
 
-class FinX(AutoGPTPluginTemplate):
+class Finxgpt(AutoGPTPluginTemplate):
 
     def __init__(self):
         super().__init__()

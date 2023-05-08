@@ -7,11 +7,11 @@ read workspace
 if [[ "$(workspace: -1)" == "/" ]]; then
   workspace="$(workspace:0:-1)"
 fi
-cp requirements.txt $workspace/finx-requirements.txt
+cp requirements.txt $workspace/finx_gpt-requirements.txt
 cd $workspace
 echo "FinX Plugin for Auto-GPT will now install dependencies."
 apt-get install -y gcc
-pip install -r finx-requirements.txt
+pip install -r finx_gpt-requirements.txt
 cd $workspace/plugins
 curl "https://github.com/isaiahbjork/Auto-GPT-FinX-Plugin/archive/refs/heads/main.zip"
 echo "FinX Plugin for Auto-GPT dependency installation complete."
