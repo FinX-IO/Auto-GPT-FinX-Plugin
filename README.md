@@ -75,7 +75,6 @@ Get started with FinX-Plugin in 5 minutes.
    FINX_API_KEY=my_finx_api_key
    FINX_REGISTERED_EMAIL=my_finx_registered_email
    FINX_WORKSPACE=my_finx_workspace_path_relative_to_default_workspace
-   FINX_API_ENDPOINT=https://hedgefunds.finx.io  # <-- note this is an actual value, make sure this is correct
    ```
    
 - Get a FinX API Key at [here](https://app.finx.io)
@@ -87,7 +86,7 @@ Get started with FinX-Plugin in 5 minutes.
     ###################################################################################
     FinX-Plugin
     ################################################################################
-    ALLOWEDLISTED_PLUGINS=FinX
+    ALLOWEDLISTED_PLUGINS=Finxgpt,
     ```
     
 ## Some Available Commands
