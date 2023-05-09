@@ -1,6 +1,8 @@
 # Auto-GPT-FinX-Plugin
 The FinX Plugin for Auto-GPT streamlines the capital markets research process by leveraging the prompt flexibility of Auto-GPT with FinX.io's institutional-grade cross-asset risk platform.
 
+A ready-to-use Dockerized implementation of Auto-GPT is here for your convenience: https://github.com/FinX-IO/FinX-GPT-Environment/tree/main
+
 ## Key Features
 
 - Open source python SDK connected to FinX.io data and analytics engines.
@@ -37,6 +39,8 @@ Get started with FinX-Plugin in 5 minutes.
 **3. Install Auto-GPT**
 
    If not already installed, clone the [Auto-GPT repository](https://github.com/Significant-Gravitas/Auto-GPT), follow the installation instructions and navigate to the `Auto-GPT` folder.
+   
+   Alternatively, you can use a pre-configured Finxgpt container at https://github.com/FinX-IO/FinX-GPT-Environment/tree/main
 
 **3. Package the plugin as a zip file**
    
